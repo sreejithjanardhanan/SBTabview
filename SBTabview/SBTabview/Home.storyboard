@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b3l-Mh-1l7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="DcU-IW-JeZ">
+            <objects>
+                <viewController storyboardIdentifier="mainHomeVC" id="b3l-Mh-1l7" customClass="SBHomeViewController" customModule="SBTabview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R7P-MS-XxB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pPR-rA-2c0" customClass="SBTabView" customModule="SBTabview" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="138"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="138" id="cvS-UA-kaV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="nibName" value="SBTabView"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14509803921568626" green="0.14509803921568626" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="pPR-rA-2c0" firstAttribute="leading" secondItem="R7P-MS-XxB" secondAttribute="leading" id="Lyt-sQ-avc"/>
+                            <constraint firstItem="pPR-rA-2c0" firstAttribute="trailing" secondItem="R7P-MS-XxB" secondAttribute="trailing" id="cS2-mR-Ctx"/>
+                            <constraint firstItem="pPR-rA-2c0" firstAttribute="top" secondItem="22d-J0-5FZ" secondAttribute="top" id="u4a-k4-4gO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="22d-J0-5FZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="homeTabView" destination="pPR-rA-2c0" id="g1o-jz-Mf0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nVM-zi-WlF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1772" y="-3501.4992503748131"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="QEJ-Hp-wuM">
+            <objects>
+                <pageViewController storyboardIdentifier="pageViewControl" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="0vN-BS-lT3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dyw-WY-yuS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1772" y="-2789"/>
+        </scene>
+        <!--Second Feature Home View Controller-->
+        <scene sceneID="ZIV-H2-1H0">
+            <objects>
+                <viewController storyboardIdentifier="secondFeatureHomeVC" id="qBX-8t-JVw" customClass="SBSecondFeatureHomeViewController" customModule="SBTabview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J0I-tK-lCO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uH3-mK-kPG">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="3Cx-lh-1iB" customClass="SBTabView" customModule="SBTabview" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="138"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="nibName" value="SBTabView"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1450980392" green="0.1450980392" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uH3-mK-kPG" firstAttribute="trailing" secondItem="J0I-tK-lCO" secondAttribute="trailing" id="LU6-Qa-9NA"/>
+                            <constraint firstItem="uH3-mK-kPG" firstAttribute="top" secondItem="UUC-5J-Lin" secondAttribute="top" id="cHc-f4-vUI"/>
+                            <constraint firstItem="uH3-mK-kPG" firstAttribute="leading" secondItem="J0I-tK-lCO" secondAttribute="leading" id="gb0-38-i7C"/>
+                            <constraint firstItem="uH3-mK-kPG" firstAttribute="bottom" secondItem="UUC-5J-Lin" secondAttribute="bottom" id="xeF-De-qTY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UUC-5J-Lin"/>
+                    </view>
+                    <connections>
+                        <outlet property="secondFeatureHeaderView" destination="3Cx-lh-1iB" id="9wH-8k-P8A"/>
+                        <outlet property="secondFeatureListView" destination="uH3-mK-kPG" id="dBo-Bf-0kg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vJL-L0-foQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1772" y="-2033.433283358321"/>
+        </scene>
+        <!--First Feature Home View Controller-->
+        <scene sceneID="cMA-wQ-iRZ">
+            <objects>
+                <viewController storyboardIdentifier="firstFeatureHomeVC" id="6Og-9a-nj5" customClass="SBFirstFeatureHomeViewController" customModule="SBTabview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VFr-g0-Tbo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bhc-3e-tvq">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="fN4-Zd-mfJ" customClass="SBTabView" customModule="SBTabview" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="138"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="nibName" value="SBTabView"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1450980392" green="0.1450980392" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bhc-3e-tvq" firstAttribute="bottom" secondItem="VFr-g0-Tbo" secondAttribute="bottom" id="VBd-BF-wuQ"/>
+                            <constraint firstItem="bhc-3e-tvq" firstAttribute="leading" secondItem="VFr-g0-Tbo" secondAttribute="leading" id="WZE-CH-Mcf"/>
+                            <constraint firstItem="bhc-3e-tvq" firstAttribute="trailing" secondItem="VFr-g0-Tbo" secondAttribute="trailing" id="X8s-Q0-sXC"/>
+                            <constraint firstItem="bhc-3e-tvq" firstAttribute="top" secondItem="zsX-RF-ljB" secondAttribute="top" id="ZM8-xX-1Qe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zsX-RF-ljB"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstFeatureHeaderView" destination="fN4-Zd-mfJ" id="ie1-53-IJM"/>
+                        <outlet property="firstFeatureListView" destination="bhc-3e-tvq" id="7KJ-Ta-7dn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u8I-gj-HvB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="983.20000000000005" y="-2034.7826086956522"/>
+        </scene>
+        <!--Notifications View Controller-->
+        <scene sceneID="Gzl-bI-XGo">
+            <objects>
+                <viewController storyboardIdentifier="notificationsVC" id="a8R-7R-2Nv" customClass="RENotificationsViewController" customModule="SBTabview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LQP-3G-sB3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SwT-mq-avt" customClass="REHeaderView" customModule="SBTabview" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="62"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="uqM-Vs-vcM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="nibName" value="REHeaderView"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jg9-qL-oSC">
+                                <rect key="frame" x="0.0" y="82" width="375" height="585"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="a8R-7R-2Nv" id="k70-cU-LU9"/>
+                                    <outlet property="delegate" destination="a8R-7R-2Nv" id="LMm-pG-Lij"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1450980392" green="0.1450980392" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jg9-qL-oSC" firstAttribute="top" secondItem="SwT-mq-avt" secondAttribute="bottom" id="4Pk-Cs-fW0"/>
+                            <constraint firstItem="SwT-mq-avt" firstAttribute="leading" secondItem="Cyb-zN-pT0" secondAttribute="leading" id="C1B-cB-qvE"/>
+                            <constraint firstItem="SwT-mq-avt" firstAttribute="top" secondItem="Cyb-zN-pT0" secondAttribute="top" id="MPD-C9-3af"/>
+                            <constraint firstItem="Cyb-zN-pT0" firstAttribute="bottom" secondItem="jg9-qL-oSC" secondAttribute="bottom" id="Nab-Yk-wuF"/>
+                            <constraint firstItem="Cyb-zN-pT0" firstAttribute="trailing" secondItem="jg9-qL-oSC" secondAttribute="trailing" id="TbL-ff-4os"/>
+                            <constraint firstItem="jg9-qL-oSC" firstAttribute="leading" secondItem="Cyb-zN-pT0" secondAttribute="leading" id="pBX-i3-8fs"/>
+                            <constraint firstItem="SwT-mq-avt" firstAttribute="trailing" secondItem="Cyb-zN-pT0" secondAttribute="trailing" id="wLp-Qf-Pdm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cyb-zN-pT0"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="notificationsHeaderView" destination="SwT-mq-avt" id="4eb-dk-et7"/>
+                        <outlet property="tableView" destination="jg9-qL-oSC" id="gQN-A0-dfi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rxn-UV-3Jz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2602" y="-2033"/>
+        </scene>
+        <!--Third Feature Home View Controller-->
+        <scene sceneID="ONc-7a-mht">
+            <objects>
+                <viewController storyboardIdentifier="thirdFeatureHomeVC" id="wVR-TJ-GQx" customClass="SBThirdFeatureHomeViewController" customModule="SBTabview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Hl-yw-qFF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="U49-0u-kPD">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="I9S-q9-tgy" customClass="SBTabView" customModule="SBTabview" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="138"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="nibName" value="SBTabView"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1450980392" green="0.1450980392" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="U49-0u-kPD" firstAttribute="bottom" secondItem="uFC-Ep-38G" secondAttribute="bottom" id="H0e-Af-pFg"/>
+                            <constraint firstItem="U49-0u-kPD" firstAttribute="leading" secondItem="uFC-Ep-38G" secondAttribute="leading" id="H3B-J5-6QA"/>
+                            <constraint firstItem="U49-0u-kPD" firstAttribute="trailing" secondItem="uFC-Ep-38G" secondAttribute="trailing" id="J84-sU-03L"/>
+                            <constraint firstItem="U49-0u-kPD" firstAttribute="top" secondItem="uFC-Ep-38G" secondAttribute="top" id="ur4-Og-eh2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uFC-Ep-38G"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="thirdFeatureHeaderView" destination="I9S-q9-tgy" id="NoE-Wb-Vab"/>
+                        <outlet property="thirdFeatureListView" destination="U49-0u-kPD" id="LwE-Ud-60h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZRw-XL-o1u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188" y="-2035.2323838080961"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FeatureData_FirstFeature</key>
+	<dict>
+		<key>featureID</key>
+		<string>id_firstfeature</string>
+		<key>featureName</key>
+		<string>First</string>
+		<key>featureRequiredUseCases</key>
+		<integer>1</integer>
+		<key>featureControllerName</key>
+		<string>SBFirstFeatureHomeViewController</string>
+		<key>featureStoryboardSource</key>
+		<string>Home</string>
+		<key>featureControllerIdentifier</key>
+		<string>firstFeatureHomeVC</string>
+	</dict>
+	<key>FeatureData_SecondFeature</key>
+	<dict>
+		<key>featureID</key>
+		<string>id_secondfeature</string>
+		<key>featureName</key>
+		<string>Second</string>
+		<key>featureRequiredUseCases</key>
+		<integer>2</integer>
+		<key>featureControllerName</key>
+		<string>SBSecondFeatureHomeViewController</string>
+		<key>featureStoryboardSource</key>
+		<string>Home</string>
+		<key>featureControllerIdentifier</key>
+		<string>secondFeatureHomeVC</string>
+	</dict>
+	<key>FeatureData_ThirdFeature</key>
+	<dict>
+		<key>featureID</key>
+		<string>id_thirdfeature</string>
+		<key>featureName</key>
+		<string>Third</string>
+		<key>featureRequiredUseCases</key>
+		<integer>3</integer>
+		<key>featureControllerName</key>
+		<string>SBThirdFeatureHomeViewController</string>
+		<key>featureStoryboardSource</key>
+		<string>Home</string>
+		<key>featureControllerIdentifier</key>
+		<string>thirdFeatureHomeVC</string>
+	</dict>
+</dict>
+</plist>
