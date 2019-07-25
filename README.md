@@ -24,7 +24,7 @@ This is an implementation of a tabview component for iOS written in Swift 4.0.
         
         self.ViewController.reloadTabs()
 
-4. Custom SBTabViewDatasource methods
+4. Implement SBTabViewDatasource methods
 
         // Get the number of tabs in the tab view
         func numberOfTabs(in tabView: SBTabView) -> Int
@@ -53,7 +53,7 @@ This is an implementation of a tabview component for iOS written in Swift 4.0.
         // To select the page indicator
         func selectedPageIndicator(in tabView: SBTabView) -> Int
 
-5. Custom SBTabViewDelegate methods
+5. Implement SBTabViewDelegate methods
 
         // Called after the left action button is tapped on the tab view
         func tabView(_ tabView:SBTabView, didTapLeftAction leftBtn:UIButton )
